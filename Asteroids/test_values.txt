@@ -1,0 +1,6 @@
+# Apophis 
+###############################
+Vol_Accepted = 0.03034285     # km^3
+Mass_Accepted = 5.31e10       # kg
+Density = 1.75e12             # kg/km^3
+spin = 30.4                   # rot/hr     
