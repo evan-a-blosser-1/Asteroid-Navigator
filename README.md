@@ -14,9 +14,15 @@ The method of using models to approximate gravitational fields of distatn small 
 
 # Hamiltonian Mechanics:
 
-The particles are set in motion utilizing Hamiltonian Mechancis, for a brief discussion on the mathmatics behind this see:
+The particles are set in motion utilizing Hamiltonian Mechancis:
 
-... set pdf link!!! 
+![image](https://github.com/user-attachments/assets/ed23e36b-9e2f-4e46-a19b-0d6a743eda08)
+
+Near small-bodies like asteroids, classical orbital elements fail, making the ideal choice for the mechanics to be Hamiltonian. Using the following equation for Hamiltonian energy we solve for the velocity of our particle using the assumption that we are setting off from the y-axis in the positive x-direction with a positive $\dot{x}$ velocity. Thus we assume that  $\dot{y}$ = $\dot{z}$ = x = z = 0:
+
+
+![image](https://github.com/user-attachments/assets/abdec320-d568-46ef-82a8-aca8a31d56ff)
+
 
 
 # How To Use Software:
@@ -36,6 +42,8 @@ This requires a little research from the user, in which the various parameters f
 
 Finding the *accepted denisty & mass* of the asteroid along, with the *accepted volume*, the model can be created. There is also a place to enter the rotation rate of the asteroid which will be used in simulations. 
 
+Other values control the precision of calcautions aand are preset. However, the user can adjust to correct errors in the model that can arise if the model is a large file or very irregualr in shape.  
+
 ![image](https://github.com/user-attachments/assets/eb218506-e033-406b-b664-85e21340ef44)
 
 
@@ -43,12 +51,14 @@ Finding the *accepted denisty & mass* of the asteroid along, with the *accepted 
 
 Simulations utilizng Hamiltonian mechanics can be conducted once the model is created. Simply sselected a desired iniitla location on the y-axis in kilometers, and hamiltonian energy in km/s:
 
-![image](https://github.com/user-attachments/assets/d38233d0-8c30-4a76-bb99-dfc50a279491)
+![image](https://github.com/user-attachments/assets/fd6ecf3f-ddef-444b-8af3-439119e9e017)
+
 
 
 ## Equilirbium Points
 
 
+![3](https://github.com/user-attachments/assets/1f68deaf-d370-4638-855f-47361ee5f384)
 
 
 
@@ -59,6 +69,11 @@ This section records the results of each section from the modeler's data to the 
 ![4](https://github.com/user-attachments/assets/666255ea-e6db-4f5a-a2eb-cb49b9ccd960)
 
 
+## Hohmann Transfer: Coming Soon!
+
+![hohm](https://github.com/user-attachments/assets/54953297-c4f9-4098-b70e-057fb8121eb9)
+
+ 
 ---
 
 ## Installing `Asteroid Navigator`
