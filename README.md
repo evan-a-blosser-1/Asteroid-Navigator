@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/6e73ce21-b49d-43d4-b7e9-a10abcb8bb81)
+
 # Asteroid Navigator
 ---
 In Early Release!
@@ -5,11 +7,57 @@ In Early Release!
 
 This is a continued project from undergraduate to graduate research in astrodynamics. It serves as a mission design aid and a teaching guide for those eager to learn! :)
 
+# Mass Conectration (MASCON) Models for Asteorids
 
-## How To Run:
-  1) Using an Interactive Development Environment (IDE)
-     - download all the files, this can be done using git clone https://github.com/evan-a-blosser-1/Asteroid-Navigator.git
-     - Then simply run `gui_1.5.py` 
+The method of using models to approximate gravitational fields of distatn small objects like asteroids is essentail for space mission design. Usuall the point approximation can be used at a distant, yet once we jounry to these asteorids we must account for perturbations (or acting forces) caused by the asteorids shape and size! 
+
+
+# Hamiltonian Mechanics:
+
+The particles are set in motion utilizing Hamiltonian Mechancis, for a brief discussion on the mathmatics behind this see:
+
+... set pdf link!!! 
+
+
+# How To Use Software:
+
+The sections of this software are the Database, Modeler, Simulation, Equilibrium Points, and Mission Output. (Hohmann Transfer Not Complete)
+
+## Database 
+
+By clicking the Run Database Query, the software will fetch asteroid shape models from a knwon online database, given internet access. From this the ID and Asteroid name should be typed into the input fields by the user before using the Fetch Asteroid Model button to begin downloading all shape models avaible. 
+
+![image](https://github.com/user-attachments/assets/6f60b9be-b293-4335-b3ec-dffbc6794fa0)
+
+
+## Modeler 
+
+This requires a little research from the user, in which the various parameters for the asteroid must be found and used to create a MASCON model of the asteroid. These values may not be widley known, found in research papers or online, and may only be best approximations. 
+
+Finding the *accepted denisty & mass* of the asteroid along, with the *accepted volume*, the model can be created. There is also a place to enter the rotation rate of the asteroid which will be used in simulations. 
+
+![image](https://github.com/user-attachments/assets/eb218506-e033-406b-b664-85e21340ef44)
+
+
+## Simulating Orbits
+
+Simulations utilizng Hamiltonian mechanics can be conducted once the model is created. Simply sselected a desired iniitla location on the y-axis in kilometers, and hamiltonian energy in km/s:
+
+![image](https://github.com/user-attachments/assets/d38233d0-8c30-4a76-bb99-dfc50a279491)
+
+
+## Equilirbium Points
+
+
+
+
+
+## Mission Output
+
+This section records the results of each section from the modeler's data to the simulation.
+
+![4](https://github.com/user-attachments/assets/666255ea-e6db-4f5a-a2eb-cb49b9ccd960)
+
 
 ---
 
@@ -30,3 +78,9 @@ This is a continued project from undergraduate to graduate research in astrodyna
 3. Next just follow the setup you can choose where to install, and if you want a desktop shortcut.
 
    - I recommend creating the shortcut for ease of locating the software. 
+
+
+## How To Run: *if you choose not to install* 
+  1) Using an Interactive Development Environment (IDE)
+     - download all the files, this can be done using git clone https://github.com/evan-a-blosser-1/Asteroid-Navigator.git
+     - Then simply run `gui_1.5.py` 
