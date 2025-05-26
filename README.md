@@ -1,22 +1,25 @@
 
 ![image](https://github.com/user-attachments/assets/ed311138-f27b-4c6b-83ad-2ba039f95040)
 
-
-# Asteroid Navigator
 ---
 In Early Release!
 ---
 
 This is a continued project from undergraduate to graduate research in astrodynamics. It serves as a mission design aid and a teaching guide for those eager to learn! :)
 
-# Mass Conectration (MASCON) Models for Asteorids
+# Mass Concentration (MASCON) Models for Asteroids
 
-The method of using models to approximate gravitational fields of distatn small objects like asteroids is essentail for space mission design. Usuall the point approximation can be used at a distant, yet once we jounry to these asteorids we must account for perturbations (or acting forces) caused by the asteorids shape and size! 
+The method of using models to approximate gravitational fields of distant small objects like asteroids is essential for space mission design. Usually the point approximation can be used at a distant, yet once we journey to these asteroids we must account for perturbations (or acting forces) caused by the asteroids shape and size!
+
+
+
+![image](https://github.com/user-attachments/assets/a99f5fb4-0f7a-4638-a44d-8fe61ee57029)
+
 
 
 # Hamiltonian Mechanics:
 
-The particles are set in motion utilizing Hamiltonian Mechancis:
+The particles are set in motion utilizing Hamiltonian Mechanics:
 
 ![image](https://github.com/user-attachments/assets/ed23e36b-9e2f-4e46-a19b-0d6a743eda08)
 
@@ -25,7 +28,7 @@ Near small-bodies like asteroids, classical orbital elements fail, making the id
 
 ![image](https://github.com/user-attachments/assets/abdec320-d568-46ef-82a8-aca8a31d56ff)
 
-
+From this the value for $\dot{x}$ is found and used as the initial velocity of the particle. 
 
 # How To Use Software:
 
@@ -33,31 +36,42 @@ The sections of this software are the Database, Modeler, Simulation, Equilibrium
 
 ## Database 
 
-By clicking the Run Database Query, the software will fetch asteroid shape models from a knwon online database, given internet access. From this the ID and Asteroid name should be typed into the input fields by the user before using the Fetch Asteroid Model button to begin downloading all shape models avaible. 
+By clicking the Run Database Query, the software will fetch asteroid shape models from a known online database, given internet access. From this the ID and Asteroid name should be typed into the input fields by the user before using the Fetch Asteroid Model button to begin downloading all shape models available. 
 
 ![image](https://github.com/user-attachments/assets/6f60b9be-b293-4335-b3ec-dffbc6794fa0)
 
 
 ## Modeler 
 
-This requires a little research from the user, in which the various parameters for the asteroid must be found and used to create a MASCON model of the asteroid. These values may not be widley known, found in research papers or online, and may only be best approximations. 
+This requires a little research from the user, in which the various parameters for the asteroid must be found and used to create a MASCON model of the asteroid. These values may not be widely known, found in research papers or online, and may only be best approximations. 
 
-Finding the *accepted denisty & mass* of the asteroid along, with the *accepted volume*, the model can be created. There is also a place to enter the rotation rate of the asteroid which will be used in simulations. 
+Finding the *accepted density & mass* of the asteroid along, with the *accepted volume*, the model can be created. There is also a place to enter the rotation rate of the asteroid which will be used in simulations. 
 
-Other values control the precision of calcautions aand are preset. However, the user can adjust to correct errors in the model that can arise if the model is a large file or very irregualr in shape.  
+Other values control the precision of calculations and are preset. However, the user can adjust to correct errors in the model that can arise if the model is a large file or very irregular in shape.  
 
 ![image](https://github.com/user-attachments/assets/eb218506-e033-406b-b664-85e21340ef44)
 
 
 ## Simulating Orbits
 
-Simulations utilizng Hamiltonian mechanics can be conducted once the model is created. Simply sselected a desired iniitla location on the y-axis in kilometers, and hamiltonian energy in km/s:
+Simulations utilizing Hamiltonian mechanics can be conducted once the model is created. Simply selected a desired initial location on the y-axis in kilometers, and hamiltonian energy in km/s:
 
 ![image](https://github.com/user-attachments/assets/fd6ecf3f-ddef-444b-8af3-439119e9e017)
 
 
 
-## Equilirbium Points
+## Equilibrium Points
+
+This section allows for the finding of equilibrium points around the asteroid using the Newton-Raphson method in 3-Dimensions. The controls allow for refinement of the solution.
+
+- Tolerance: controls the definition of the equilibrium to zero. The smaller the value the more precise the solution is.
+
+- Step Size: controls how quickly the iterations move, set to 1 to allow to null the step size and allow for the Newton-Raphson to go at any pace. This may decrease precision. 
+
+- Max iterations: controls how many times this will run before ending without finding a solution. 
+
+- Mesh Guess Size: controls the mesh grid size for initial guesses. Increasing this exponentially increases the amount of solutions, but does not guarantee they will be unique! Keeping this low will increase speed and reduced redundant solutions. 
+
 
 
 ![3](https://github.com/user-attachments/assets/1f68deaf-d370-4638-855f-47361ee5f384)
