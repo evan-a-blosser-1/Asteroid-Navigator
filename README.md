@@ -1,4 +1,6 @@
-![image](https://github.com/user-attachments/assets/6e73ce21-b49d-43d4-b7e9-a10abcb8bb81)
+
+![image](https://github.com/user-attachments/assets/ed311138-f27b-4c6b-83ad-2ba039f95040)
+
 
 # Asteroid Navigator
 ---
